@@ -1,26 +1,22 @@
-[![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=358564&assignment_repo_type=GroupAssignmentRepo)
-# Group YYY - {Short snappy Title of your project}
-
-- Your title can change over time.
-
+# Group YYY - {Tile}
 ## Milestones
 
 Details for Milestone are available on Canvas (left sidebar, Course Project) or [here](https://firas.moosvi.com/courses/data301/project/milestone01.html).
 
 ## Describe your topic/interest in about 150-200 words
 
-{Add your stuff here}
+- @RitaLam I guess this part is your task
 
 ## Describe your dataset in about 150-200 words
 
-{Add your stuff here}
+- @RitaLam @thuanGIT @lhenon999 We are all doing this!
 
 ## Team Members
 
-- Person 1: one sentence about you!
-- Person 2: one sentence about you!
-- Person 3: one sentence about you!
+- Rita Lam: one sentence about you!
+- Leo Henon: one sentence about you!
+- Jamie Vo: I am a comp-sci second-year student. Coding is everything I want to do! I am not a fan of Excel!
 
 ## References
 
-{Add your stuff here}
+Depending on which dataset we agree on!
