@@ -1,4 +1,4 @@
-# Group YYY - {Tile}
+# Group 1039 - Can humans live on Mars?
 ## Milestones
 
 Details for Milestone are available on Canvas (left sidebar, Course Project) or [here](https://firas.moosvi.com/courses/data301/project/milestone01.html).
@@ -19,4 +19,4 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 ## References
 
-Depending on which dataset we agree on!
+[1] [Mars Weather data set](https://github.com/the-pudding/data/tree/master/mars-weather)
