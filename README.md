@@ -14,7 +14,7 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 ## Team Members
 
 - Rita Lam: I am first year Master student in Applied Science; I hated coding but I am willing to learn and hope this course change my mind!
-- Leo Henon: one sentence about you!
+- Leo Henon: I am a second-year comp-sci Major in bachelor of Science. I love coding, but only when my code works!
 - Jamie Vo: I am a comp-sci second-year student. Coding is everything I want to do! I am not a fan of Excel!
 
 ## References
