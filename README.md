@@ -5,7 +5,10 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 ## Describe your topic/interest in about 150-200 words
 
-- @RitaLam I guess this part is your task
+We chose this US baby name dataset as it is interesting to see the naming trend at a specific region throughout the 100 years.  This dataset collected baby names both at states and national level in the US from 1990s to 2014. We will analyze the state level dataset and compare the most and least popular baby names in each state to see the similarity. The national level dataset will also be analyzed to see if there is a naming trend over the 100 years. This can be done by comparing the most popular boy/girls name in each decade. Ultimately, we can compare both the state and national level datasets and see which state has the most similar naming trend to the national trend. 
+
+Certainly, there are other variables we will analyze to ask specific questions: The boys and girls name can be analyzed separately, and the naming trend for a specific time period can also varies based on our interest. The user-facing Dashboard will be used to present our analysis for this exciting dataset. 
+
 
 ## Describe your dataset in about 150-200 words
 
