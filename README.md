@@ -1,4 +1,4 @@
-# Group 1039 - Can humans live on Mars?
+# Group 1039 - US Baby Name Trend
 ## Milestones
 
 Details for Milestone are available on Canvas (left sidebar, Course Project) or [here](https://firas.moosvi.com/courses/data301/project/milestone01.html).
