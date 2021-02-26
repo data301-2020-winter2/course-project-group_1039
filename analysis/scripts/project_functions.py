@@ -30,3 +30,7 @@ def load_and_process_many(source=None):
                 delimiter=","))
     df = pd.concat(parts,axis=0,ignore_index=True)
     return df
+
+if __name__ == "__main__":
+    df = load_and_process_one(path='../../data/raw/NationalNames.csv')
+    print(df)
