@@ -30,19 +30,27 @@ def load_and_process_many(source=None):
     return process(pd.concat(parts, axis=0, ignore_index=True))
     
 
-
+POPULAR = 2000
 def process(dataframe=None):    
     if dataframe is None:
         raise ValueError("Expecting 1 argument but 0 is passed.")
     elif not isinstance(dataframe, pd.DataFrame):
         raise TypeError(f"An oject of type DataFrame is expected but {type(dataframe)} is passed.")
     
-    return  (dataframe
+    df =    ( dataframe
                 .drop(columns=['Id'])
+                .dropna()
+                .drop_duplicates(keep='first')
                 .loc[dataframe["Year"] >= 1910]
-                .assign(Popular = (dataframe["Count"] > 1000))  
                 .reset_index(drop=True)
             )
+    # if "State" in dataframe.colummns.data:
+    #     df= ( df.drop_duplicates(subset=["Name", "State"], keep="first")
+    #             .pivot(index="",columns="",values="")
+    #         )
+    # else:
+    #     df = df.pivot(index="Year", columns="Name", values="Count")
+    return df
 
     
 
