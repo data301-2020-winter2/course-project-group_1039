@@ -1,6 +1,13 @@
 import pandas as pd
 import os
 
+# CONSTANT FOR US REGION
+NORTH_EAST = ['CT', 'DE', 'MA', 'MD', 'ME', 'NH', 'NJ', 'NY', 'PA', 'RI', 'VT']  
+MID_WEST = ['IA', 'IL', 'IN', 'KS', 'MI', 'MN', 'MO', 'ND', 'NE', 'OH', 'SD', 'WI'] 
+WEST = ['AK', 'AZ', 'CA', 'CO', 'HI', 'ID', 'MT', 'NM', 'NV', 'OR', 'UT', 'WA', 'WY'] 
+SOUTH = ['AL', 'AR', 'DC', 'DE', 'FL', 'GA', 'KY', 'LA', 'MD', 'MS', 'NC', 'OK', 'SC', 'TN', 'TX', 'VA', 'WV']
+POPULAR = 2000
+
 def load_and_process_one(source=None):
     if source is None:
         raise TypeError("Expecting 1 argument but 0 argument is passed.")
@@ -30,7 +37,6 @@ def load_and_process_many(source=None):
     return process(pd.concat(parts, axis=0, ignore_index=True))
     
 
-POPULAR = 2000
 def process(dataframe=None):    
     if dataframe is None:
         raise ValueError("Expecting 1 argument but 0 is passed.")
