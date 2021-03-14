@@ -89,6 +89,7 @@ def process_national(dataframe=None):
     #     df = df.pivot(index="Year", columns="Name", values="Count")
     return df
 
+
     # Method to get the top names based on decade and gender (move to project_functions)
 def get_top_names_byDec_gender(dataframe,decade,gender,num_of_names):
     df_filtered = dataframe.loc[   (dataframe['Year'] >= decade) & 
@@ -114,8 +115,8 @@ def get_top_name_foreachDec_gender(dataframe,gender):
 
     data = []
     for year in range(1880,2011,10):
-        data.append([year,get_top_names_byDec_gender(national_df,year,gender,1).iloc[0]['Name'],
-                        get_top_names_byDec_gender(national_df,year,gender,1).iloc[0]['Count']]
+        data.append([year,get_top_names_byDec_gender(dataframe,year,gender,1).iloc[0]['Name'],
+                        get_top_names_byDec_gender(dataframe,year,gender,1).iloc[0]['Count']]
                     )
 
 
@@ -127,9 +128,9 @@ def get_top_name_foreachDec(dataframe):
 
     data = []
     for year in range(1880,2011,10):
-        data.append([year,get_top_names_byDec(national_df,year,1).iloc[0]['Name'],
-                        get_top_names_byDec(national_df,year,1).iloc[0]['Gender'],
-                        get_top_names_byDec(national_df,year,1).iloc[0]['Count']]
+        data.append([year,get_top_names_byDec(dataframe,year,1).iloc[0]['Name'],
+                        get_top_names_byDec(dataframe,year,1).iloc[0]['Gender'],
+                        get_top_names_byDec(dataframe,year,1).iloc[0]['Count']]
                     )
 
 
@@ -141,18 +142,18 @@ def get_top_name_foreachYear_male_female(dataframe):
 
     data = []
     for year in range(1879,2014):
-        data.append([year,get_top_names_byDec_gender(national_df,year,'F',1).iloc[0]['Name'],
-                        get_top_names_byDec(national_df,year,1).iloc[0]['Gender'],
-                        get_top_names_byDec_gender(national_df,year,'F',1).iloc[0]['Count']]
+        data.append([year,get_top_names_byDec_gender(dataframe,year,'F',1).iloc[0]['Name'],
+                        get_top_names_byDec(dataframe,year,1).iloc[0]['Gender'],
+                        get_top_names_byDec_gender(dataframe,year,'F',1).iloc[0]['Count']]
                     )
 
 
     df_m = pd.DataFrame(data, columns = ['Decade','Name','Gender','Count'])
 
     for year in range(1879,2014):
-        data.append([year,get_top_names_byDec_gender(national_df,year,'M',1).iloc[0]['Name'],
-                        get_top_names_byDec(national_df,year,1).iloc[0]['Gender'],
-                        get_top_names_byDec_gender(national_df,year,'M',1).iloc[0]['Count']]
+        data.append([year,get_top_names_byDec_gender(dataframe,year,'M',1).iloc[0]['Name'],
+                        get_top_names_byDec(dataframe,year,1).iloc[0]['Gender'],
+                        get_top_names_byDec_gender(dataframe,year,'M',1).iloc[0]['Count']]
                     )
 
 
@@ -161,26 +162,13 @@ def get_top_name_foreachYear_male_female(dataframe):
 
     return merged_df
 
-# returns a dataframe with the top name for each year filtered by gender
-def get_top_names_foreachYear_gender(dataframe,gender,num_of_names):
-
-    data = []
-    for year in range(1879,2015):
-        data.append([year,get_top_names_byYear_gender(national_df,year,gender,num_of_names).iloc[0]['Name'],
-                        get_top_names_byYear_gender(national_df,year,gender,num_of_names).iloc[0]['Count']]
-                    )
-
-
-    df = pd.DataFrame(data, columns = ['Year','Name', 'Count'])
-    return df
-
 # returns a dataframe with the top name for each year
 def get_top_names_foreachYear(dataframe,num_of_names):
 
     data = []
     for year in range(1879,2015):
-        data.append([year,get_top_names_byYear(national_df,year,num_of_names).iloc[0]['Name'],
-                        get_top_names_byYear(national_df,year,num_of_names).iloc[0]['Count']]
+        data.append([year,get_top_names_byYear(dataframe,year,num_of_names).iloc[0]['Name'],
+                        get_top_names_byYear(dataframe,year,num_of_names).iloc[0]['Count']]
                     )
 
 
